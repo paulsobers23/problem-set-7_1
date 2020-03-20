@@ -1,0 +1,24 @@
+{
+  "name": "problem-set-7_1",
+  "version": "1.0.0",
+  "description": "express-to-do",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulsobers23/problem-set-7_1.git"
+  },
+  "author": "paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulsobers23/problem-set-7_1/issues"
+  },
+  "homepage": "https://github.com/paulsobers23/problem-set-7_1#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
