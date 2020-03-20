@@ -8,17 +8,15 @@
   <title>To Do App</title>
 </head>
 <body>
-  <div class = "container">
+  <div class ="container">
     <div class = "row">
-      <form action ="/addTask" method="POST">
-        <label for="add task">Add Task</label>
-        <input type="text" name="task"/>
-        <input type="datetime-local" name ="dueDate"/>
+      <form action ="/update/<%= oldTask.id %>" method ="POST">
+        <label>Update Task</label>
+        <input type="text" name="newTask" value ="<%= oldTask.task %>"/>
         <input type="submit" name="submit" class="btn waves-effect waves-light"/>
-    </form>
+      </form>
     </div>
+    
   </div>
-  
-  
 </body>
 </html>

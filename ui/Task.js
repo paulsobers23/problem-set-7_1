@@ -1,19 +1,28 @@
-class Task{
-  constructor(task,dueDate, isDone){
-    this.tasks = task;
-    this.dueDate = new Date();
-    this.isDone = false; 
-    this.id = ++Task.count;
+class Task {
+  constructor(task, dueDate) {
+    this.task = task;
+    this.dueDate = new Date(dueDate);
+    this.isDone = false;
+    this.id = Task.count;
+    Task.count += 1;
   }
-  updateTask(newTask){
+
+  updateTask(newTask) {
     this.task = newTask;
     return newTask;
   }
-  updateDueDate(newDate){
-    this.task = new Date(newDate);
+
+  updateDueDate(newDate) {
+    this.dueDate = new Date(newDate);
+    return newDate;
   }
-  markComplete(){
-    this.isDone = true;
+
+  markComplete() {
+    if (this.isDone === false) {
+      this.isDone = true;
+    } else {
+      this.isDone = false;
+    }
   }
 }
 
